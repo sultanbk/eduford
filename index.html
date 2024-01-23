@@ -3,12 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Eduford</title>
 </head>
 <body>
   <section class="header">
-    
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+      <div class="nav-links" id="nav-links">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu"></i>
+    </nav>
+    <div class="text-box">
+      <h1>World's Biggest University</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum sed mollitia deserunt itaque eius saepe quis modi. <br>Hic nulla sint incidunt necessitatibus explicabo minima labore autem molestias exercitationem fuga!</p>
+      <a href="#" class="hero-btn">Visit Us to Know More</a>
+    </div>
   </section>
+  <!-- JavaScrip -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
 </body>
 </html>
